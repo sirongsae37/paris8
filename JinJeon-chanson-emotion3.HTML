@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dataviz</title>
+  </head>
+  <body>
+  <div class="col-md-9" id="main-content">
+          <h3 class="text-center py-3"></h3>
+          <center>
+            <h4>
+              L’émotion dans la parole des chansons populaires :
+            <div>
+                  </div>
+              Billboard charts 1948-2022
+            </h4>
+          </center>
+          <br />
+
+          <div class="container">
+              <ol>
+                <h5><li>Sujet</li></h5>
+                <div>
+                  <div>
+                    La parole consitue l'élément qui donne un sens à la musique.
+                    En effet, il s'agit d'une forme de langage susceptible de  
+                    transmettre non seulement du sens mais aussi de l'émotion. 
+                    A travers la parole d'une chanson la plus populaire de l'année,
+                    nous pourrions voir l'émotion qui était la plus répandue dans la société. 
+                   
+                  </div>
+                  <br />
+                  <div>
+                    Nous avons recueilli les données de <b>'Billboard Year-End number-one singles'</b>
+                    depuis 1948 jusqu'à 2022, afin d'analyser l'émotion représentée dans une chanson comme la joie,
+                    la tristesse, le peur, le dégoût, etc.
+                    L'objectif est de voir son évolution dans l'ordre chronologique jusqu'à nos jours.
+                    En plus, ayant recueilli ses thèmes, nous pourrions voir la relation 
+                    entre l'émotion et le thème traité.
+                    L'enjeu est ainsi de transformer la parole d'une chanson, donc un texte, en données structurées qui pemettent d'une analyse graphique.
+                     Ce travail a été achevé lors de l'atelier DataViz en M2 NET à l'Université Paris 8 suivi de M. Reyes.
+                  </div>
+               
+                  <center>
+                  <div>
+                  <div></div>
+                 <br/>
+                 <ol>
+                    <img src="https://sirongsae37.github.io/paris8/greatalbumcovers672a0.jpg" style="width:400px">
+                  </center>
+                  <br />
+                </div>
+                <h5><li>Auteur</li></h5>
+                <div>
+                  <div>
+                    <b>Jin JEON</b>, étudiante Sud-Coréenne en M2 NET à l'Université Paris 8<div>
+                  <div>
+                  sirongsae@gmail.com
+                  <div>
+                  <div>
+                    <a href="https://www.linkedin.com/in/jin-jeon-78440b12b/">LinkedIn</a>
+                  </div>
+                  <br />
+                </div>
+                <h5><li>Données</li></h5>
+                <div>
+                  <p>
+                    Les données sont regroupées dans ce fichier Google Sheets :
+                    <a href="https://docs.google.com/spreadsheets/d/1vh6gQstIWUQptte063sxKQTd_m8qciCCID2rmRfJ_JQ/edit?usp=sharing">
+                    Dataviz-JinJeon-List of Billboard Year-End number-one singles
+                    </a>
+                   </p>
+                  <div>
+                    <ol>
+                      <li><b>Year, Title, Artist, Lyrics</b> sont des résultats de recherche sur Wikipédia et Google.</li>
+                     
+                      <li><b>Emotion, Theme</b> sont rédigés par l'auteur.</li>
+                      
+                      <li>Les chiffres de <b>Sadness, Joy, Fear, Disgust, Anger</b> de chaque chanson ont été renseignés sur <b>IBM Watsont Natural Language Understanding</b></li>
+                      
+                      <a
+                        href="https://www.ibm.com/demos/live/natural-language-understanding/self-service/home"
+                      >
+                      
+                      https://www.ibm.com/demos/live/natural-language-understanding/self-service/home
+                      </a>
+                    
+                      
+                    </ol>
+                  </div>
+                  <br />
+                </div>
+                <h5><li>Thèmes traités dans les chansons</li></h5>
+                <div>
+                 Ayant nettoyé les données, les thèmes récurents dans les chançons sont désormais visibles : Love, Ended love, Sexual love, Life, Party, War, Comfort, Happiness, Nostalgia, Friend, etc.
+                 <div>Au niveau de la visualisation, nous avons les résultats suivants :</div>
+                 <br/>
+                 <ol>
+                 
+<img src="https://sirongsae37.github.io/paris8/Theme1.svg" style="width:500px">
+                  <li>Le thème de l'amour a toujours été présent.</li>
+                  <li>Il faut néanmoins remarquer que l'amour lié à la tristesse (Ended love) se distingue de l'amour en cours (Love).</li>
+                  <li>Le bonheur n'étant pas sujet de l'amour semble très rare.</li>
+                  <li>Deux chansons qui parlent de la guerre sont présents dans les années 50, 60.</li>
+                 </ol>
+                </div>
+                <br />
+                <h5><li>Relation entre thèmes et émotions</li></h5>
+                <center>
+                  
+                </center>
+                <div>
+                 
+                 <div>Voici la répartition des 4 émotions en fonction des thèmes traités dans les chansons :</div>
+                 <br/>
+                 <ol>
+                 
+<img src="https://sirongsae37.github.io/paris8/Emotion to theme 2.png" style="width:400px">
+                  <li>La joie est la plus présente parmi les quatres émotions.</li>
+                  <li>Il y a des cars de tristesse dans les chansons de l'amour en cours.</li>
+                  <li>Très peu de cas de dégoût sont liés aux chansons sur la vie, l'amour fini et l'amour en cours.</li>
+                  <li>Deux chansons sur la guerre représentent la joie.</li>
+              </ol>
+             
+                </div>
+                <br />
+                <h5><li>Passage des quatres émotions</li></h5>
+                <center>
+                  
+                </center>
+                <div>
+                 
+                 <div>Les quatres émotions sont notés par le logiciel IBM. Voici les résultats :</div>
+                 <br/>
+                 <ol>
+                 
+<img src="https://sirongsae37.github.io/paris8/Emotion of yearAI.png" style="width:500px">
+                  <li>Il y a quelques pointes de joie surtout au début de décennie.</li>
+                  <li>La joie est relativement rare à partir de 2000.</li>
+                  <li>La tristesse est plus présente à partir des années 80.</li>
+                  <li>Pourtant, les résultats ne sont pas parfaitement fiables : le logiciel IBM confond les mots de la joie et de la tristesse notamment lorsqu'il s'agit de l'amour.</li>
+              </ol>
+              </div>
+                <br />
+                <h5><li>Répartition des la joie dans une graphique de contour</li></h5>
+                <center>
+                  
+                </center>
+                <div>
+                 
+                 <div>L'émotion de la joie peut également être vu dans sa dimension :</div>
+                 <br/>
+                 <ol>
+                 
+<img src="https://sirongsae37.github.io/paris8/Joy1.png" style="width:400px">
+                  
+                  </ol>
+             
+                </div>
+                <br />
+                <h5><li>Conclusion</li></h5>
+                <center>
+                  
+                </center>
+                <div>
+                 
+                 <div>La parole d'une chanson n'est pas, stricto sensu, des données. Elle conserve pourtant une représentation signifiante, donc une ou plusieurs émotions à travers certain thème. Partant de l'idée sur laquelle l'émotion peut se transformer en données numériques, les résultats étaient intéressants. Dans la société américaines, surtout à partir de la génération Boomers, il y a eu une grande évolution non seulement dans le domaine de la musique mais aussi dans l'émotion représentée qui est en effet indissociable avec leurs évènements historiques. Le sentiment public aurait été exprimé à travers ces chansons. Certes, une forte présence de joie montre également que la chanson populaire a une vocation de rendre sa nation heureux. </div>
+                 <br/>
+                 <ol>
+              </ol>
+              
+             
+                 
+            </div>
+            
+          </div>
+        </div>
+      </div>
